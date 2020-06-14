@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.MovieCatalogue">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <permission
+        android:name="com.example.MovieCatalogue.READ_DATABASE"
+        android:protectionLevel="normal" />
+    <permission
+        android:name="com.example.MovieCatalogue.WRITE_DATABASE"
+        android:protectionLevel="normal" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name="com.example.MovieCatalogue.PreferenceActivity"></activity>
+
+        <provider
+            android:name="com.example.MovieCatalogue.Provider.FavoriteProvider"
+            android:authorities="com.example.MovieCatalogue"
+            android:exported="true"
+            android:readPermission="com.example.mysubmission5.READ_DATABASE"
+            android:writePermission="com.example.mysubmission5.WRITE_DATABASE" />
+
+        <receiver
+            android:name="com.example.MovieCatalogue.Receiver.AlarmReceiver"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver android:name="com.example.MovieCatalogue.Activity.FavoriteWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/favorite_film_widget_info" />
+        </receiver>
+
+        <activity android:name="com.example.MovieCatalogue.Activity.TvShowSearchListActivity" />
+        <activity
+            android:name="com.example.MovieCatalogue.Activity.MovieSearchListActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.MovieCatalogue.Activity.TvShowDetailActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.MovieCatalogue.Activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.MovieCatalogue.Activity.MovieDetailActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name="com.example.MovieCatalogue.Widget.StackWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+    </application>
+
+</manifest>

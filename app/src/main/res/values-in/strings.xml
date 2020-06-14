@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Video Catalogue</string>
+    <string name="change_language_settings">Pengaturan Perubahan Bahasa</string>
+    <string name="detail_tv_show">Detail Acara TV</string>
+    <string name="overview">Sinopsis</string>
+    <string name="release">Tanggal Rilis</string>
+    <string name="tab_text_movie">Film</string>
+    <string name="tab_text_tvshow">Acara TV</string>
+    <string name="user_score">Penilaian Pengguna</string>
+    <string name="detail_movie">Memuat...</string>
+    <string name="title">judul</string>
+    <string name="add_favorite">ditambahkan ke Favorit..!</string>
+    <string name="removed_favorite">dihapus dari Favorite..!</string>
+    <string name="favorite_list">Ubah Daftar Favorite</string>
+    <string name="favorite_title">FIlm dan Acara TV Favorite</string>
+    <string name="search_video">Pencarian video</string>
+    <string name="favorite_film">Film Favorit</string>
+    <string name="no_data">TIDAK ADA</string>
+    <string name="add_widget">Tambah Widget</string>
+    <string name="appwidget_text">Film Favorite</string>
+    <string name="key_daily_reminde">daily</string>
+    <string name="key_daily_reminder">daily</string>
+    <string name="title_daily_reminder">Daily Reminder</string>
+    <string name="key_release_reminder">release</string>
+    <string name="title_release_reminder">Release Reminder</string>
+    <string name="change_preferences">Change Preferences Alarm</string>
+</resources>

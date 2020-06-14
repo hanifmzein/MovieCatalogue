@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Video Catalogue</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="tab_text_movie">Movie</string>
+    <string name="tab_text_tvshow">Tv Show</string>
+    <string name="change_language_settings">Change Language Settings</string>
+    <string name="overview">Overview</string>
+    <string name="release">Release</string>
+    <string name="user_score">User Score</string>
+    <string name="detail_movie">Loading...</string>
+    <string name="detail_tv_show">Loading...</string>
+    <string name="title">Video Catalogue</string>
+    <string name="add_favorite">add in Favorite..!</string>
+    <string name="removed_favorite">" removed from Favorite..!"</string>
+    <string name="favorite_list">Change Favorite List</string>
+    <string name="favorite_title">Favorite Movies and TV</string>
+    <string name="search_video">Search Video</string>
+    <string name="appwidget_text">Favorite Film</string>
+    <string name="add_widget">Add widget</string>
+    <string name="favorite_film">Favorite Film</string>
+    <string name="no_data">NO DATA</string>
+    <string name="content_title">Reminder Jam 7</string>
+    <string name="content_text">cek Movie Catalogue</string>
+    <string name="subtext">oke....</string>
+    <string name="key_daily_reminde">daily</string>
+    <string name="key_daily_reminder">daily</string>
+    <string name="title_daily_reminder">Daily Reminder</string>
+    <string name="key_release_reminder">release</string>
+    <string name="title_release_reminder">Release Reminder</string>
+    <string name="change_preferences">Change Preferences Alarm</string>
+</resources>
